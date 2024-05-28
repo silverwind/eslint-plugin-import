@@ -514,7 +514,7 @@ module.exports = {
         return;
       }
 
-      if (isTypeExport && unusedExports && unusedTypeExports === false) {
+      if (isTypeExport && unusedTypeExports === false) {
         return;
       }
 
