@@ -445,8 +445,8 @@ module.exports = {
           description: 'report exports without any usage',
           type: 'boolean',
         },
-        unusedTypeExports: {
-          description: 'report type exports without any usage',
+        ignoreUnusedTypeExports: {
+          description: 'ignore type exports without any usage',
           type: 'boolean',
         },
       },
@@ -476,7 +476,7 @@ module.exports = {
       ignoreExports = [],
       missingExports,
       unusedExports,
-      unusedTypeExports,
+      ignoreUnusedTypeExports,
     } = context.options[0] || {};
 
     if (unusedExports) {
@@ -514,7 +514,7 @@ module.exports = {
         return;
       }
 
-      if (isTypeExport && unusedTypeExports === false) {
+      if (isTypeExport && ignoreUnusedTypeExports) {
         return;
       }
 

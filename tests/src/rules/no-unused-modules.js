@@ -40,7 +40,7 @@ const unusedExportsTypescriptOptions = [{
 
 const unusedExportsTypescriptIgnoreUnusedTypesOptions = [{
   unusedExports: true,
-  unusedTypeExports: false,
+  ignoreUnusedTypeExports: true,
   src: [testFilePath('./no-unused-modules/typescript')],
   ignoreExports: undefined,
 }];
