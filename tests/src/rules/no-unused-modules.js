@@ -1196,27 +1196,18 @@ context('TypeScript', function () {
           code: `export interface c {};`,
           parser,
           filename: testFilePath('./no-unused-modules/typescript/file-ts-c-unused.ts'),
-          errors: [
-            error(`exported declaration 'c' not used within other modules`),
-          ],
         }),
         test({
           options: unusedExportsTypescriptIgnoreUnusedTypesOptions,
           code: `export type d = {};`,
           parser,
           filename: testFilePath('./no-unused-modules/typescript/file-ts-d-unused.ts'),
-          errors: [
-            error(`exported declaration 'd' not used within other modules`),
-          ],
         }),
         test({
           options: unusedExportsTypescriptIgnoreUnusedTypesOptions,
           code: `export enum e { f };`,
           parser,
           filename: testFilePath('./no-unused-modules/typescript/file-ts-e-unused.ts'),
-          errors: [
-            error(`exported declaration 'e' not used within other modules`),
-          ],
         }),
       ),
       invalid: [].concat(
