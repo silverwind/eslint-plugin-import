@@ -448,7 +448,6 @@ module.exports = {
         unusedTypeExports: {
           description: 'report type exports without any usage',
           type: 'boolean',
-          default: true,
         },
       },
       anyOf: [
@@ -515,7 +514,7 @@ module.exports = {
         return;
       }
 
-      if (isTypeExport && unusedExports && !unusedTypeExports) {
+      if (isTypeExport && unusedExports && unusedTypeExports === false) {
         return;
       }
 
