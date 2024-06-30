@@ -11,6 +11,9 @@ This change log adheres to standards from [Keep a CHANGELOG](https://keepachange
 - [`dynamic-import-chunkname`]: Allow empty chunk name when webpackMode: 'eager' is set; add suggestions to remove name in eager mode ([#3004], thanks [@amsardesai])
 - [`no-unused-modules`]: Add `ignoreUnusedTypeExports` option ([#3011], thanks [@silverwind])
 
+### Fixed
+- [`no-extraneous-dependencies`]: allow wrong path ([#3012], thanks [@chabb])
+
 ### Changed
 - [Docs] `no-extraneous-dependencies`: Make glob pattern description more explicit ([#2944], thanks [@mulztob])
 - [`no-unused-modules`]: add console message to help debug [#2866]
@@ -1117,6 +1120,7 @@ for info on changes for earlier releases.
 
 [`memo-parser`]: ./memo-parser/README.md
 
+[#3012]: https://github.com/import-js/eslint-plugin-import/pull/3012
 [#3004]: https://github.com/import-js/eslint-plugin-import/pull/3004
 [#2991]: https://github.com/import-js/eslint-plugin-import/pull/2991
 [#2989]: https://github.com/import-js/eslint-plugin-import/pull/2989
@@ -1734,6 +1738,7 @@ for info on changes for earlier releases.
 [@bradzacher]: https://github.com/bradzacher
 [@brendo]: https://github.com/brendo
 [@brettz9]: https://github.com/brettz9
+[@chabb]: https://github.com/chabb
 [@Chamion]: https://github.com/Chamion
 [@charlessuh]: https://github.com/charlessuh
 [@charpeni]: https://github.com/charpeni
